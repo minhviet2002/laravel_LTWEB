@@ -1,0 +1,43 @@
+table,
+th,
+td {
+    border-bottom: 1px solid #333;
+}
+
+th,
+td {
+    font-size: 1.7rem;
+}
+
+td {
+    line-height: 46px;
+
+}
+
+button {
+    width: 100%;
+    font-size: 1.7rem !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead th {
+    text-align: center;
+}
+
+table tbody td {
+    text-align: center;
+}
+
+.table {
+    background-color: #e8ebed;
+}
+
+.table tbody tr:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    color: var(--primary-color);
+}

@@ -1,0 +1,167 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.tabs .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease;
+}
+
+.tab-item {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.tab-item:nth-child(1){
+  padding-bottom: 40px;
+}
+.tab-item-lesson {
+  display: block;
+}
+
+.commonItem_cta-btn {}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #ccc;
+  background-position: 50%;
+  border-radius: 16px;
+  width: 310px;
+  height: 175px;
+  overflow: hidden;
+}
+
+.lessons-item-img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.commonItem_cta-btn {
+  position: absolute;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  opacity: .8;
+  color: #fff;
+  border-radius: 9999px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  outline: none;
+  padding: 7px 17px;
+  text-align: center;
+  transition: .3s ease;
+  z-index: 1;
+  animation: btn-transition linear .2s;
+  display: none;
+  min-width: 100px;
+}
+.commonItem_cta-btn:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  opacity: .95;
+  color: #fff;
+}
+@keyframes btn-transition {
+  from {
+    transform: translateY(20%);
+  }
+
+  to {
+    transform: translateY(0%);
+
+  }
+
+}
+
+.img-wrap::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .45);
+  border-radius: 16px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab-item-lesson:hover .img-wrap::before {
+  opacity: 1 !important;
+}
+
+.tab-item-lesson:hover .commonItem_cta-btn {
+  display: block;
+}
+
+.commonItem_title {
+  padding: 15px 0px 7px 0px;
+  font-weight: 600;
+  margin: 0;
+  color:  #292929;;
+}
+
+.courseItem_students-count {
+  color: #666;
+    font-size: 1.5rem;
+}
+
+.courseItem_students-count-text {
+  padding-left: 10px;
+}
+
+.tab-item:hover {
+  color: var(--primary-color);
+}
+
+.tab-icon {
+  font-size: 24px;
+  width: 32px;
+  position: relative;
+  top: 2px;
+}
+
+/* 
+
+.tab-item:hover {
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(194, 53, 100, 0.1);
+}
+
+.tab-item.active {
+  opacity: 1;
+}
+
+
+.tab-pane {
+  color: #333;
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+} */

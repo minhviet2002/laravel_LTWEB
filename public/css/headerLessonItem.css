@@ -1,0 +1,44 @@
+.header-lessonItem {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #29303b;
+    position: relative;
+    z-index: 1;
+}
+
+.header-lessonItem-introduce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-lessonItem-iconLeft i {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 60px;
+    cursor: pointer;
+    color: #fff;
+}
+.header-lessonItem-iconLeft:hover i {
+    color: #ccc;
+    transition: all linear .2s;
+}
+.header-lessonItem-img {
+    margin-left: 8px;
+    border-radius: 8px;
+    position: relative;
+    top: 1px;
+    height: 30px;
+}
+
+.header-lessonItem-text {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 16px;
+    line-height: 30px;
+    overflow: hidden;
+}

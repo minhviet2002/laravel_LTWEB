@@ -1,0 +1,344 @@
+.lesson-body {
+    width: 1380px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.lessonItem-body {
+    width: 100%;
+}
+
+.lesson-item-body {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.tab-content {
+    display: flex;
+}
+
+.content-introduce-wrapper {
+    padding: 0 8.5%;
+    position: relative;
+    width: 100%;
+    height: auto !important;
+}
+
+.video-wrapper {
+    background-color: #000;
+    padding: 0 8.5%;
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    overflow: hidden;
+}
+
+.tab-pane {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.lesson-heading {
+    cursor: pointer;
+}
+
+.lesson-heading-text {
+    min-width: 300px;
+}
+
+.lesson-heading:hover {
+    color: var(--primary-color);
+}
+
+.lesson-video {
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+.lesson-video.active-video {
+    display: block !important;
+    width: 100px;
+    height: 100px;
+}
+
+.main_comment-btn {
+    position: fixed;
+    right: 20px;
+    z-index: 1;
+    bottom: 20px;
+    min-width: 160px;
+}
+
+.actionButton_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    border-radius: 999px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: relative;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.actionButton_wrapper svg {
+    width: 27px;
+    height: 27px;
+}
+
+.actionButton_title {
+    margin-left: 8px;
+
+}
+
+.markdownParser_wrapper p {
+    padding: 15px 0px;
+    font-size: 1.7rem;
+}
+
+.list_introduce {
+    list-style-type: disc;
+}
+
+.list_introduce li {
+    font-weight: 600;
+}
+
+.list_introduce li a {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: 100;
+
+}
+
+.heading-name-lesson {
+    font-size: 2.8rem;
+    margin: 30px 0 8px;
+    font-weight: 600;
+}
+
+.header-lesson-item {
+    border-bottom: 1px solid #dedfe0;
+    background-color: #f7f8fa;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 0 8px 15px;
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    min-width: 350px;
+    height: 640px;
+    overflow-y: overlay;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 640px;
+    overflow-y: overlay;
+
+}
+.page-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-item>a {
+    width: 100%;
+    min-height: 70px;
+    padding-left: 15px;
+    border: none;
+    color: #000;
+}
+
+.active>.page-link {
+    background-color: #f0512333;
+    color: #000;
+    
+}
+.active .less-head-text{
+    font-weight: bold;
+}
+.less-head-text{
+    font-size: 1.4rem;
+    
+}
+.page-link {
+    display: flex;
+   flex-direction: column;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    font-size: 1.6rem;
+    outline: none;
+    background-color: #fff;
+}
+
+.active .page-link {
+    cursor: default !important;
+
+}
+
+.page-link:hover {
+    color: #000;
+}
+
+.content-wrapper::-webkit-scrollbar,
+.pagination::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+
+}
+
+.content-wrapper::-webkit-scrollbar-thumb,
+.pagination::-webkit-scrollbar-thumb {
+    border-radius: 100rem;
+
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.content-wrapper::-webkit-scrollbar-track,
+.pagination::-webkit-scrollbar-track {
+    background-color: transparent transparent transparent;
+    border-radius: 100rem;
+
+}
+
+.actionBar_wrapper {
+    align-items: center;
+    background-color: #f0f0f0;
+    bottom: 0;
+    box-shadow: 0 -2px 3px rgb(0 0 0 / 10%);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+}
+
+.actionBar_btn-pre {
+    border-radius: 6px;
+    color: #404040;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: .3s ease;
+    user-select: none;
+    border: none;
+    box-shadow: none;
+    display: block;
+    outline: none;
+    cursor: pointer;
+}
+
+.actionBar_btn-pre i {
+    padding-right: 5px;
+}
+
+.actionBar_btn-next {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    margin-left: 12px;
+    border-radius: 6px;
+    color: #404040;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: .3s ease;
+    box-shadow: none;
+    display: block;
+    outline: none;
+}
+
+.actionBar_btn-next i {
+    padding-left: 5px;
+}
+
+.actionBar_btn_pre-disabled {
+    cursor: default;
+    opacity: .5;
+    pointer-events: none;
+    border-radius: 6px;
+    color: #404040;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    border: none;
+    box-shadow: none;
+    display: block;
+    outline: none;
+    user-select: none;
+}
+
+.actionBar_btn_next-disabled {
+    cursor: default;
+    opacity: .5;
+    pointer-events: none;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: none;
+    display: block;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: .3s ease;
+    user-select: none;
+    border-radius: 6px;
+}
+
+.page-link-a {
+    color: #404040;
+
+}
+
+.actionBar_btn-pre:hover .page-link-a,
+.actionBar_btn-next:hover .page-link-a {
+    color: #000;
+    transition: all linear .3s;
+}
+.stepItem_desc{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.StepItem_lesson-icon {
+    width: 11px;
+    color: var(--primary-color);
+    margin-right: 10px;
+    display: none;
+}
+.StepItem_lesson-icon_not{
+    width: 11px;
+    margin-right: 10px;
+    display: inline-block;
+    color: #ccc;
+}
+.active .StepItem_lesson-icon {
+    display: inline-block;
+}
+.active .StepItem_lesson-icon_not {
+    display: none;
+} 

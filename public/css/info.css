@@ -1,0 +1,39 @@
+.info-body {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 1380px;
+    padding-bottom: 20px;
+}
+
+.info-wrap {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.info-wrap-item {
+    display: flex;
+    padding: 7px 0px 7px 0px;
+}
+.info-avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.text-info-heading {
+    min-width: 150px;
+    padding-left: 20px;
+}
+
+.text-info-span {
+    padding-left: 40px;
+}
+
+.btn-info {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 7px;
+    font-size: 1.5rem;
+}

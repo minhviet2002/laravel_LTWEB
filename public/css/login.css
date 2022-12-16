@@ -1,0 +1,159 @@
+#root {}
+
+.login_wrapper {
+    align-items: center;
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.login_wrapper::before {
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("https://static.platzi.com/media/user_upload/FULL-STACK-DEV-GRAPH-2-0b343532-7342-4dca-938e-efe6af2ebc32.jpg");
+    background-size: cover;
+    bottom: -5px;
+    content: "";
+    left: -5px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.login_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.login_content {
+    background: #fff;
+    border-radius: 8px;
+    max-width: calc(100vw - 32px);
+    height: 480px;
+    padding: 30px 16px 0px 16px;
+    position: relative;
+    width: 640px;
+    box-shadow: 3px 10px 11px rgb(0 0 0 / 30%);
+    overflow-y: scroll;
+}
+
+.login_content::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+.login_content::-webkit-scrollbar-thumb {
+    border-radius: 100rem;
+    background-color: #ccc;
+    
+}
+
+.login_content::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 100rem;
+
+}
+.login_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_header h1 {
+    padding-left: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+  
+}
+
+.login_header-img{
+    width: 100px;
+    height: 65px;
+    border-radius: 6px;
+}
+.login_body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+.form_login{
+    display: flex;
+    flex: 1;
+    width: 380px;
+    flex-direction: column;
+}
+.form_item:first-child {
+    margin-top: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.label_login {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 10px 0 5px 8px;
+    float: left;
+}
+
+.input_login {
+    display: flex;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 12px 20px;
+    background: rgba(22,24,35,.06);
+    border: 1px solid rgba(22,24,35,.06);
+    border-radius: 44px;
+    height: 44px;
+}
+
+.form_input-message {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 3px;
+    padding-left: 5px;
+    float: left;
+}
+.input-submit{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 44px;
+   border: none;
+   border-radius: 10px;
+   font-size: 1.5rem;
+   font-weight: bold;
+   cursor: pointer;
+   /* margin-top: 40px; */
+}
+.btn-submit{
+    padding-top: 30px;
+}
+.login_dontHaveAcc{
+    padding-top: 15px;
+}
+.login_dontHaveAcc-a{
+    padding-left: 5px;
+    color: var(--primary-color);
+    font-weight: 600;
+    opacity: .8;
+    
+}
+.login_dontHaveAcc-a:hover{
+    opacity: 1;
+    color: var(--primary-color);
+}
+.login_container-bottom{
+    padding-top: 40px;
+    padding-bottom: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
