@@ -15,6 +15,9 @@ use Symfony\Component\HttpFoundation\Session\Session;
 */
 use Illuminate\Routing\Controllers\Middleware;
 
+// Route::get('/admin', function(){
+
+// });
 Route::get('/', function () {
     return view('main-home.index');
 })->name('home.index');
@@ -34,8 +37,15 @@ Route::get('/logout', 'App\Http\Controllers\backend\logoutController@logout')->n
 
 
 // USER
+Route::group(['prefix' => 'user', 'namespace' => 'App\Http\Controllers\personalPage'], function () {
+    // PERSENAL PAGE
+    
+    Route::get('/@{name}', 'personalPageController@pageIndex')->name('personalPage.index');
 
+});
 Route::group(['prefix' => 'user', 'namespace' => 'App\Http\Controllers\backend'], function () {
+
+
     Route::get('home', 'homeController@index')->name('home');
     Route::get('routes', 'routeController@index')->name('learn.routes.index');
     Route::get('routes/frontend', 'routeFrontendController@index')->name('learn.routes.frontend.index');
@@ -123,3 +133,4 @@ Route::group(['prefix' => 'admin', 'namespace' => 'App\Http\Controllers\formadd'
 
     Route::get('deletelessonJS/{id}', 'formAddJSController@delete')->name('formadd.js.delete');
 });
+

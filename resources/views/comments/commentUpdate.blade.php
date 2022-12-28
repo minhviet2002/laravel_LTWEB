@@ -77,7 +77,9 @@ Sửa bình luận
                     @else
                     <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                     @endif
-                    <h2 class="comment-item-name">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                    <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $commentData[$i]->name ])}}">
+                        <h2 class="comment-item-name">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                    </a>
                     <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                         <ul class="comment-option-list">
                             <li class="comment-option-item">
@@ -102,7 +104,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        </a>
                         <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                             <ul class="comment-option-list">
                                 <li class="comment-option-item">
@@ -126,7 +130,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">Bạn</h2>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">Bạn</h2>
+                        </a>
                         <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                             <ul class="comment-option-list">
                                 <li class="comment-option-item">
@@ -150,7 +156,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">{{$item->fullname}}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">{{$item->fullname}}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        </a>
                     </div>
                     <span class="comment-item-content"> {{$item->content_reply}}</span>
                     <span class="comment-hour">{{$item->created_at}}</span>
@@ -164,7 +172,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">{{$item->fullname}}</h2>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">{{$item->fullname}}</h2>
+                        </a>
                     </div>
                     <span class="comment-item-content"> {{$item->content_reply}}</span>
                     <span class="comment-hour">{{$item->created_at}}</span>
@@ -199,7 +209,9 @@ Sửa bình luận
                     @else
                     <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                     @endif
-                    <h2 class="comment-item-name">Bạn</h2>
+                    <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $commentData[$i]->name ])}}">
+                        <h2 class="comment-item-name">Bạn</h2>
+                    </a>
                     <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                         <ul class="comment-option-list">
                             <li class="comment-option-item">
@@ -224,7 +236,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        </a>
                         <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                             <ul class="comment-option-list">
                                 <li class="comment-option-item">
@@ -248,7 +262,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">Bạn</h2>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">Bạn</h2>
+                        </a>
                         <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                             <ul class="comment-option-list">
                                 <li class="comment-option-item">
@@ -272,7 +288,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">{{$item->fullname}}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">{{$item->fullname}}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        </a>
                     </div>
                     <span class="comment-item-content"> {{$item->content_reply}}</span>
                     <span class="comment-hour">{{$item->created_at}}</span>
@@ -286,7 +304,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">{{$item->fullname}}</h2>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">{{$item->fullname}}</h2>
+                        </a>
                     </div>
                     <span class="comment-item-content"> {{$item->content_reply}}</span>
                     <span class="comment-hour">{{$item->created_at}}</span>
@@ -327,7 +347,9 @@ Sửa bình luận
                     @else
                     <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                     @endif
-                    <h2 class="comment-item-name">{{$commentData[$i]->fullname }}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                    <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $commentData[$i]->name ])}}">
+                        <h2 class="comment-item-name">{{$commentData[$i]->fullname }}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                    </a>
                 </div>
                 <span class="comment-item-content"> {{$commentData[$i]->content}}</span>
                 <span class="comment-hour">{{$commentData[$i]->created_at}}</span>
@@ -342,7 +364,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        </a>
                         <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                             <ul class="comment-option-list">
                                 <li class="comment-option-item">
@@ -366,7 +390,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">Bạn</h2>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">Bạn</h2>
+                        </a>
                         <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                             <ul class="comment-option-list">
                                 <li class="comment-option-item">
@@ -390,7 +416,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">{{$item->fullname}}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">{{$item->fullname}}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        </a>
                     </div>
                     <span class="comment-item-content"> {{$item->content_reply}}</span>
                     <span class="comment-hour">{{$item->created_at}}</span>
@@ -404,7 +432,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">{{$item->fullname}}</h2>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">{{$item->fullname}}</h2>
+                        </a>
                     </div>
                     <span class="comment-item-content"> {{$item->content_reply}}</span>
                     <span class="comment-hour">{{$item->created_at}}</span>
@@ -439,7 +469,9 @@ Sửa bình luận
                     @else
                     <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                     @endif
-                    <h2 class="comment-item-name">{{$commentData[$i]->fullname }}</h2>
+                    <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $commentData[$i]->name ])}}">
+                        <h2 class="comment-item-name">{{$commentData[$i]->fullname }}</h2>
+                    </a>
                 </div>
                 <span class="comment-item-content"> {{$commentData[$i]->content}}</span>
                 <span class="comment-hour">{{$commentData[$i]->created_at}}</span>
@@ -454,7 +486,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">Bạn</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        </a>
                         <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                             <ul class="comment-option-list">
                                 <li class="comment-option-item">
@@ -478,7 +512,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">Bạn</h2>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">Bạn</h2>
+                        </a>
                         <div class="comment-item-btn icon-ellipsis fa-solid fa-ellipsis">
                             <ul class="comment-option-list">
                                 <li class="comment-option-item">
@@ -502,7 +538,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">{{$item->fullname}}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">{{$item->fullname}}</h2><i class="comment-item-check fa-solid fa-circle-check"></i>
+                        </a>
                     </div>
                     <span class="comment-item-content"> {{$item->content_reply}}</span>
                     <span class="comment-hour">{{$item->created_at}}</span>
@@ -516,7 +554,9 @@ Sửa bình luận
                         @else
                         <i class="comment-item-ava fa-sharp fa-solid fa-user-tie"></i>
                         @endif
-                        <h2 class="comment-item-name-reply">{{$item->fullname}}</h2>
+                        <a class="personalPage" href="{{ route('personalPage.index',  ['name' => $item->name ])}}">
+                            <h2 class="comment-item-name-reply">{{$item->fullname}}</h2>
+                        </a>
                     </div>
                     <span class="comment-item-content"> {{$item->content_reply}}</span>
                     <span class="comment-hour">{{$item->created_at}}</span>

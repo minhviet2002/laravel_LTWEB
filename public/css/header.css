@@ -120,6 +120,7 @@
     text-decoration: none;
     padding-left: 10px;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -127,42 +128,56 @@
     color: #000;
     text-decoration: underline;
 }
+
 .header-item-login:hover .header-item-logout {
     display: block;
-    
-    
+
+
 }
 
 .header-item-logout {
     position: absolute;
-    top: 100%;
+    top: 115%;
     right: 0%;
-    min-width: 100px;
-    padding: 5px 10px;
-    background: #f9f9f9;
-    border-radius: 10px;
+    min-width: 140px;
     box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+    display: none;
+}
+.header-item-logout::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    width: 100%;
+    height: 13px;
+    background-color: transparent;
+}
+.header-item-logout-text {
+    width: 100%;
+    padding: 10px 12px;
+    background: #fff;
+    border-radius: 3px;
     color: #1d2129;
     z-index: 10000;
     animation: logout linear .3s;
-    display: none;
+    display: block;
+    border-bottom: 1px solid #333;
+    opacity: 1;
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 @keyframes logout {
     from {
         transform: translateY(10%);
 
     }
+
     to {
         transform: translateY(0%);
 
     }
-}
-.header-item-logout-text {
-    color: #000;
-    opacity: .8;
-    font-size: 1.5rem;
-    cursor: pointer;
-
 }
 
 .header-item-logout-text i {

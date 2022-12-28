@@ -1,0 +1,219 @@
+/* .hover-btn{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.hover-btn > i {
+    color: #fff;
+} */
+.Profile_user {
+    position: absolute;
+    bottom: -80px;
+    left: 40px;
+    transform: translateY(-15px);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.Profile_banner {
+    background: top/cover no-repeat;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-image: url(https://fullstack.edu.vn/static/media/cover-profile.3fb9fed576da4b28386a.png);
+    width: 1100px;
+    height: 308px;
+    position: relative;
+}
+
+.Profile_user-avatar {}
+
+.info-avatar {}
+
+.Profile_crown {}
+
+.Profile_user-name {
+    display: flex;
+    align-items: flex-end;
+}
+
+.Profile_user-name-text {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    text-align: center;
+}
+
+.index-module_row {
+    display: flex;
+    padding-top: 80px;
+    width: 1100px;
+
+}
+
+.content-left {
+    width: 45%;
+}
+
+.content-right {
+    width: 55%;
+}
+
+.content-left,
+.content-right {
+    padding: 0 12px;
+}
+
+.Box_wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 10%), 0 0 1px 0 rgb(0 0 0 / 10%);
+    margin-bottom: 20px;
+    padding: 18px 14px;
+    word-break: break-word;
+}
+
+.Box_title {}
+
+.Profile_participation {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.Profile_participation-icon {
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.Profile_highlight {}
+
+.ActivityItem_wrapper {
+    display: flex;
+    padding-top: 8px;
+}
+
+.ActivityItem_avatar-wrapper {
+    padding-right: 5px;
+}
+
+.ActivityItem_main-content {
+    min-width: 408px;
+    border-bottom: 1px solid #d0d7de;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.ActivityItem_author {}
+
+.ActivityItem_message {
+    color: #000;
+}
+
+.ActivityItem_message:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.Profile_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+.lesson-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile_thumb {}
+
+.Profile_thumb-image {
+    border-radius: 16px;
+    height: 100%;
+    object-fit: cover;
+    width: 228px;
+    height: 128px;
+    border-style: none !important;
+}
+
+.commonItem_title {}
+
+.info {
+    padding-left: 20px;
+
+}
+
+.Profile_info-title>a {
+    color: #000;
+
+}
+
+.Profile_info-desc {}
+
+.personalPage {
+    color: #000;
+}
+
+.personalPage:hover {
+    color: #000;
+    opacity: .9;
+}
+
+.update-info {
+    padding-bottom: 27px;
+    padding-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.update-info-text::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: transparent;
+    width: 100px;
+    height: 10px;
+}
+
+.update-info-text {
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    min-width: 100px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: none;
+    animation: block_none linear .7s;
+}
+
+.update-info:hover .update-info-text {
+    display: block;
+}
+
+@keyframes block_none {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
